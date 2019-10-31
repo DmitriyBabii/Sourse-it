@@ -1,0 +1,22 @@
+package com.piatakha;
+
+import java.util.Scanner;
+
+public class Massive {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Insert the number: ");
+		int height = sc.nextInt();
+		String sc1 = "";
+
+		for (int i = 0; i < height; i++) {
+			sc1 += "*";
+			System.out.println(sc1);
+		}
+
+		while (height != 0) {
+			System.out.println(sc1.substring(0, (height - 1)));
+			height--;
+		}
+	}
+}
